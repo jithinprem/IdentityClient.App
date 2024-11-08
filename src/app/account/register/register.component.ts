@@ -5,7 +5,7 @@ import {HttpClient} from "@angular/common/http";
 import {SharedService} from "../../shared/shared.service";
 import {Router} from "@angular/router";
 import {take} from "rxjs";
-import {User} from "../../shared/models/user";
+import {User} from "../../shared/models/account/user";
 
 @Component({
   selector: 'app-register',

@@ -7,13 +7,19 @@ import {AccountRoutingModule} from "./account-routing.module";
 import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {SharedModule} from "../shared/shared.module";
+import { ConfirmEmailComponent } from './confirm-email/confirm-email.component';
+import { SendEmailComponent } from './send-email/send-email.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 
 
 @NgModule({
   declarations: [
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ConfirmEmailComponent,
+    SendEmailComponent,
+    ResetPasswordComponent
   ],
   imports: [
     CommonModule,
