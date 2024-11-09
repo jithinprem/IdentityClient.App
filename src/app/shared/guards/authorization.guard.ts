@@ -1,6 +1,6 @@
 import {ActivatedRouteSnapshot, CanActivateFn, Router, RouterStateSnapshot} from '@angular/router';
 import {map, Observable} from "rxjs";
-import {User} from "../models/user";
+import {User} from "../models/account/user";
 import {inject} from "@angular/core";
 import {AccountService} from "../../account/account.service";
 import {SharedService} from "../shared.service";
@@ -17,7 +17,7 @@ export const authorizationGuard: CanActivateFn = (route: ActivatedRouteSnapshot,
         return true;
       } else {
         sharedService.showNotification(false, 'Restricted Area', 'Leave immediately.');
-        router.navigate(['account/login'], {queryParams: {returnUrl: state.url}});
+        router.navigate(['account/login'], {queryParams: {returnUrl: state.url}}); // if you are accessing a protected url without logging, the protected url data is passed to login
         return false;
       }
     })

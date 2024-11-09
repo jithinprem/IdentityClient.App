@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {BsModalRef, BsModalService, ModalOptions} from "ngx-bootstrap/modal";
-import {Register} from "./models/register";
+import {Register} from "./models/account/register";
 import {NotificationComponent} from "./components/modals/notification/notification.component";
 
 @Injectable({
