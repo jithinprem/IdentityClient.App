@@ -1,5 +1,5 @@
 export const environment = {
-  production: false,
-  appUrl: 'http://localhost:5111',
+  production: true,
+  appUrl: 'api/',
   userKey: 'identityAppUser'
 };
